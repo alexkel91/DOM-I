@@ -54,3 +54,15 @@ navBar[2].textContent = siteContent['nav']['nav-item-3'];
 navBar[3].textContent = siteContent['nav']['nav-item-4'];
 navBar[4].textContent = siteContent['nav']['nav-item-5'];
 navBar[5].textContent = siteContent['nav']['nav-item-6'];
+
+const hero = document.querySelector('h1');
+hero.textContent = siteContent['cta']['h1'];
+const button = document.querySelector('button');
+button.textContent =siteContent['cta']['button'];
+
+const h4 = document.querySelectorAll('.text-content > h4');
+h4[0].textContent = siteContent['main-content']['features-h4'];
+h4[1].textContent = siteContent['main-content']['about-h4'];
+h4[2].textContent = siteContent['main-content']['services-h4'];
+h4[3].textContent = siteContent['main-content']['product-h4'];
+h4[4].textContent = siteContent['main-content']['vision-h4'];
