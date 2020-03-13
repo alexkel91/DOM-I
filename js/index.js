@@ -66,3 +66,43 @@ h4[1].textContent = siteContent['main-content']['about-h4'];
 h4[2].textContent = siteContent['main-content']['services-h4'];
 h4[3].textContent = siteContent['main-content']['product-h4'];
 h4[4].textContent = siteContent['main-content']['vision-h4'];
+
+const p = document.querySelectorAll('.text-content > p');
+p[0].textContent = siteContent['main-content']['features-content'];
+p[1].textContent = siteContent['main-content']['about-content'];
+p[2].textContent = siteContent['main-content']['services-content'];
+p[3].textContent = siteContent['main-content']['product-content'];
+p[4].textContent = siteContent['main-content']['vision-content'];
+
+
+const contactH4 = document.querySelector('.contact > h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+
+
+const contactP = document.querySelectorAll('.contact > p');
+contactP[0].textContent = siteContent['contact']['address'];
+contactP[1].textContent = siteContent['contact']['phone'];
+contactP[2].textContent = siteContent['contact']['email'];
+
+const footer = document.querySelector('footer');
+footer.textContent = siteContent['footer']['copyright'];
+
+const home = document.createElement('a');
+const team = document.createElement('a');
+
+home.textContent = 'Home';
+home.href = 'index.html';
+team.textContent = 'Partners';
+team.href = '#';
+
+let newNav = document.querySelector('header > nav');
+newNav.prepend(home);
+newNav.appendChild(team);
+
+
+//Change nav text color 
+
+const navColor = document.querySelectorAll('header > nav > a');
+navColor.forEach(navBar => {
+  navBar.style.color = 'blue';
+});
